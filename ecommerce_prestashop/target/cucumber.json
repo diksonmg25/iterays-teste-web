@@ -1,0 +1,385 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-04T22:09:17.419Z",
+        "before": [
+          {
+            "result": {
+              "duration": 186198437400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.ComprarProdutoSteps.inicializar()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Deve mostrar produto pedido confirmado",
+        "description": "",
+        "id": "comprar-produto;deve-mostrar-produto-pedido-confirmado;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1920395400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.ComprarProdutoSteps.capturarTela(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 7793682400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.ComprarProdutoSteps.finalizar()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 21142417200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "que estou na pagina inicial",
+            "match": {
+              "location": "steps.ComprarProdutoSteps.que_estou_na_pagina_inicial()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 32905992200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "eu estou logado",
+            "match": {
+              "location": "steps.ComprarProdutoSteps.eu_estou_logado()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 7056144200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "seleciono um produto na posicao 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 32
+                }
+              ],
+              "location": "steps.ComprarProdutoSteps.seleciono_um_produto_na_posicao(java.lang.Integer)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1000700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "nome do produto na tela principal e na tela produto eh \"Hummingbird Printed T-Shirt\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hummingbird Printed T-Shirt\"",
+                  "offset": 55
+                }
+              ],
+              "location": "steps.ComprarProdutoSteps.nome_do_produto_na_tela_principal_eh(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1000300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "preco do produto na tela principal e na tela produto eh \"$19.12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"$19.12\"",
+                  "offset": 56
+                }
+              ],
+              "location": "steps.ComprarProdutoSteps.preco_do_produto_na_tela_principal_eh(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d83.0.4103.116)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DIKSON\u0027, ip: \u0027169.254.18.87\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002714.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\Dik\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:54926}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 87fa763484a3327db5b8bcf0d8df007c\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat pages.ProdutoPage.selecionarCorPreta(ProdutoPage.java:59)\r\n\tat steps.ComprarProdutoSteps.adiciono_o_produto_no_carrinho_com_tamanho_cor_e_quantidade(ComprarProdutoSteps.java:152)\r\n\tat ✽.adiciono o produto no carrinho com tamanho \"M\" cor \"Black\" e quantidade 2(file:///C:/Users/Dik/workspace-curso-irts-iterasys-testes-web/ecommerce_prestashop/src/test/resources/features/comprar_produto.feature:22)\r\n",
+              "duration": 9880210200,
+              "status": "failed"
+            },
+            "line": 22,
+            "name": "adiciono o produto no carrinho com tamanho \"M\" cor \"Black\" e quantidade 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"M\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"Black\"",
+                  "offset": 51
+                },
+                {
+                  "val": "2",
+                  "offset": 72
+                }
+              ],
+              "location": "steps.ComprarProdutoSteps.adiciono_o_produto_no_carrinho_com_tamanho_cor_e_quantidade(java.lang.String,java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 3008700,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "o produto aparece na confirmacao com nome \"Hummingbird Printed T-Shirt\" preco \"$19.12\" tamanho \"M\" cor \"Black\" e quantidade 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hummingbird Printed T-Shirt\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"$19.12\"",
+                  "offset": 78
+                },
+                {
+                  "val": "\"M\"",
+                  "offset": 95
+                },
+                {
+                  "val": "\"Black\"",
+                  "offset": 103
+                },
+                {
+                  "val": "2",
+                  "offset": 124
+                }
+              ],
+              "location": "steps.ComprarProdutoSteps.o_produto_aparece_na_confirmacao_com_nome_preco_tamanho_cor_e_quantidade(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@fluxopadrao"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-04T22:13:49.386Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9431878100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.ComprarProdutoSteps.inicializar()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "Deve mostrar produto pedido confirmado",
+        "description": "",
+        "id": "comprar-produto;deve-mostrar-produto-pedido-confirmado;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 653482600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.ComprarProdutoSteps.capturarTela(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 1831336900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.ComprarProdutoSteps.finalizar()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 27231410900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "que estou na pagina inicial",
+            "match": {
+              "location": "steps.ComprarProdutoSteps.que_estou_na_pagina_inicial()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 9844177900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "eu estou logado",
+            "match": {
+              "location": "steps.ComprarProdutoSteps.eu_estou_logado()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 3751740100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "seleciono um produto na posicao 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 32
+                }
+              ],
+              "location": "steps.ComprarProdutoSteps.seleciono_um_produto_na_posicao(java.lang.Integer)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 953000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "nome do produto na tela principal e na tela produto eh \"Hummingbird Printed Sweater\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hummingbird Printed Sweater\"",
+                  "offset": 55
+                }
+              ],
+              "location": "steps.ComprarProdutoSteps.nome_do_produto_na_tela_principal_eh(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1996200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "preco do produto na tela principal e na tela produto eh \"$28.72\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"$28.72\"",
+                  "offset": 56
+                }
+              ],
+              "location": "steps.ComprarProdutoSteps.preco_do_produto_na_tela_principal_eh(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 6707838800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "adiciono o produto no carrinho com tamanho \"XL\" cor \"N/A\" e quantidade 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"XL\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"N/A\"",
+                  "offset": 52
+                },
+                {
+                  "val": "3",
+                  "offset": 71
+                }
+              ],
+              "location": "steps.ComprarProdutoSteps.adiciono_o_produto_no_carrinho_com_tamanho_cor_e_quantidade(java.lang.String,java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: \r\nExpected: is \"3\"\r\n     but: was \"13\"\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)\r\n\tat steps.ComprarProdutoSteps.o_produto_aparece_na_confirmacao_com_nome_preco_tamanho_cor_e_quantidade(ComprarProdutoSteps.java:179)\r\n\tat ✽.o produto aparece na confirmacao com nome \"Hummingbird Printed Sweater\" preco \"$28.72\" tamanho \"XL\" cor \"N/A\" e quantidade 3(file:///C:/Users/Dik/workspace-curso-irts-iterasys-testes-web/ecommerce_prestashop/src/test/resources/features/comprar_produto.feature:23)\r\n",
+              "duration": 713519800,
+              "status": "failed"
+            },
+            "line": 23,
+            "name": "o produto aparece na confirmacao com nome \"Hummingbird Printed Sweater\" preco \"$28.72\" tamanho \"XL\" cor \"N/A\" e quantidade 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hummingbird Printed Sweater\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"$28.72\"",
+                  "offset": 78
+                },
+                {
+                  "val": "\"XL\"",
+                  "offset": 95
+                },
+                {
+                  "val": "\"N/A\"",
+                  "offset": 104
+                },
+                {
+                  "val": "3",
+                  "offset": 123
+                }
+              ],
+              "location": "steps.ComprarProdutoSteps.o_produto_aparece_na_confirmacao_com_nome_preco_tamanho_cor_e_quantidade(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@fluxopadrao"
+          }
+        ]
+      }
+    ],
+    "name": "Comprar produto",
+    "description": "  Como um usuario logado\n  Eu quero escolher um produto\n  e visualizar esse produto no carrinho\n  Para concluir o pedido",
+    "id": "comprar-produto",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/comprar_produto.feature",
+    "tags": []
+  }
+]

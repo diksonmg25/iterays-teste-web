@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="340.106">
+    <testcase classname="Comprar produto" name="Deve mostrar produto pedido confirmado" time="271.574">
+        <failure message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=83.0.4103.116)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DIKSON', ip: '169.254.18.87', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '14.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Dik\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54926}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 87fa763484a3327db5b8bcf0d8df007c" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[Dado que estou na pagina inicial............................................passed
+Quando eu estou logado......................................................passed
+E seleciono um produto na posicao 0.........................................passed
+E nome do produto na tela principal e na tela produto eh "Hummingbird Printed T-Shirt".passed
+E preco do produto na tela principal e na tela produto eh "$19.12"..........passed
+E adiciono o produto no carrinho com tamanho "M" cor "Black" e quantidade 2.failed
+Entao o produto aparece na confirmacao com nome "Hummingbird Printed T-Shirt" preco "$19.12" tamanho "M" cor "Black" e quantidade 2.skipped
+
+StackTrace:
+org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DIKSON', ip: '169.254.18.87', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Dik\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54926}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 87fa763484a3327db5b8bcf0d8df007c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at pages.ProdutoPage.selecionarCorPreta(ProdutoPage.java:59)
+	at steps.ComprarProdutoSteps.adiciono_o_produto_no_carrinho_com_tamanho_cor_e_quantidade(ComprarProdutoSteps.java:152)
+	at ✽.adiciono o produto no carrinho com tamanho "M" cor "Black" e quantidade 2(file:///C:/Users/Dik/workspace-curso-irts-iterasys-testes-web/ecommerce_prestashop/src/test/resources/features/comprar_produto.feature:22)
+]]></failure>
+    </testcase>
+    <testcase classname="Comprar produto" name="Deve mostrar produto pedido confirmado 2" time="60.194">
+        <failure message="&#13;&#10;Expected: is &quot;3&quot;&#13;&#10;     but: was &quot;13&quot;" type="java.lang.AssertionError"><![CDATA[Dado que estou na pagina inicial............................................passed
+Quando eu estou logado......................................................passed
+E seleciono um produto na posicao 1.........................................passed
+E nome do produto na tela principal e na tela produto eh "Hummingbird Printed Sweater".passed
+E preco do produto na tela principal e na tela produto eh "$28.72"..........passed
+E adiciono o produto no carrinho com tamanho "XL" cor "N/A" e quantidade 3..passed
+Entao o produto aparece na confirmacao com nome "Hummingbird Printed Sweater" preco "$28.72" tamanho "XL" cor "N/A" e quantidade 3.failed
+
+StackTrace:
+java.lang.AssertionError: 
+Expected: is "3"
+     but: was "13"
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at steps.ComprarProdutoSteps.o_produto_aparece_na_confirmacao_com_nome_preco_tamanho_cor_e_quantidade(ComprarProdutoSteps.java:179)
+	at ✽.o produto aparece na confirmacao com nome "Hummingbird Printed Sweater" preco "$28.72" tamanho "XL" cor "N/A" e quantidade 3(file:///C:/Users/Dik/workspace-curso-irts-iterasys-testes-web/ecommerce_prestashop/src/test/resources/features/comprar_produto.feature:23)
+]]></failure>
+    </testcase>
+</testsuite>
